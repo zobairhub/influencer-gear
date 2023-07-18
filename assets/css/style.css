@@ -85,9 +85,11 @@ body {
 
 /* header part start */
 header{
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 95%;
+  height: auto;
   margin: 0 auto;
-  padding: 90px 120px;
+  padding: 50px 100px;
 }
 nav{
   display: flex;
@@ -106,10 +108,15 @@ nav ul li a{
   font-size: 1rem;
   font-weight: 600;
 }
-.site-title{
+.site-title h3{
   font-family: Poppins;
   font-size: 1.5rem;
   font-weight: 700;
+}
+.site-home-icon{
+  position: absolute;
+  left: 0;
+  top: 3px;
 }
 /* nav part end */
 
@@ -121,17 +128,41 @@ nav ul li a{
   margin-top: 100px;
 }
 .hero-text-box{}
-.hero-title{}
-.hero-des{}
-.hero-btn{}
+.hero-title{
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+.hero-des{
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+.hero-btn{
+  font-size: 1rem;
+}
 .hero-img-box{
   background: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-.hero-img-box .hero-img{}
+.hero-img-box .hero-img{
+  max-width: 100%;
+}
 /* hero part end */
-
-
-
-
 /* header part end */
+
+/* sponsored part start */
+.sponsors{
+  max-width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 100px;
+  background-color: rebeccapurple;
+}
+.sponsors-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* sponsored part end */
